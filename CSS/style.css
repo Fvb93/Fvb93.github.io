@@ -1,24 +1,26 @@
 body {
 color: rgb(0, 0, 0);
 }
-
-.titre {
-	background-image: url("../images/test.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 150px;
-}
 h1 {
 	text-align: center;
-	color: rgb(11, 137, 191);
-	padding: 10px 0;
+	color: rgb(255, 255, 255);
+	padding: 50px 0;
 	font-size: 50px;
-	margin: 0 ;
+	margin: auto ;
+}
+.photo {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 50px 0;
+	font-size: 50px;
+	margin: auto ;
 }
 
 .présentation {
-background-image: url("../images/blanc.jpg");
+background-image: url("../images/fondnoir1.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
