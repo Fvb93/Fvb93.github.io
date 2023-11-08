@@ -15,9 +15,10 @@
 <div class="présentation">
 	<h1>Voici un petit site internet afin de me découvrir davantage </h1>
 	<div class="photo">
-	<img src="images/moi.png" alt="texte alternatif"/>
-</div>
+	<img src="images/moi.png" alt="texte alternatif" class="photo"/>
+	</div>
 	<h2>Qui suis-je ?</h2>
+
 	<form action="php.php" method="POST" enctype="multipart/form-data">
 		<fieldset>
 			<legend>Coordonnées</legend>
@@ -54,6 +55,8 @@
 				<input type="file" name="monFichier"  accept="application/jpeg" accept="application/png" multiple>
 			</div>
 		</fieldset>
+		</form>
+		<form>
 		<fieldset>
 			<legend>Expériences professionnelles</legend>
 			<div>
@@ -94,7 +97,12 @@
 					</optgroup>
 				</SELECT>
 			</div>
-
+			<div> 
+				<label for="etudiant-id"> Jobs étudiant </label> <select name="etudiant-id">
+					<OPTION SELECTED VALUE="">Menu déroulant</option>
+					<option value="weltrans"> Weltrans</option>
+						<option value="henriglace"> Henri Glaces</option>
+				</select> </div>
 				<div>
 					<label for="description-id"> Informations supplémentaires </label >
 				</div>
@@ -102,7 +110,15 @@
 					<textarea name="message" id="description-id" rows="4" cols="87">En pleine reconversion professionnelle, j'ai toujours eu un attrait prononcé pour l'informatique. Toujours prêt à accepter de nouveaux défis, je me considère comme quelqu'un de motivé, appliqué et déterminé. Je me remets sans cesse en question afin de m'améliorer dans mon travail professionnel. J'espère trouver un emploi stable où je pourrai m'épanouir et prévoir des projets à long terme.</textarea>
 				</div>	
 			</fieldset>
-			
+		</form>
+		<form>
+			<fieldset>
+				<legend>Formations</legend>
+				<div>
+					<label for="nom-id">A continuer </label> 
+					<input type="text" name="nom" id="nom-id" class="textfield" value="Van Buggenhout">  
+				</div>
+			</fieldset>
 		</form>
 </div>
 	
