@@ -1,9 +1,5 @@
 body {
-background-image: url("../images/fondnoir.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-color: white;
+color: rgb(0, 0, 0);
 }
 
 .titre {
@@ -11,12 +7,50 @@ color: white;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 300px;
-
+	padding: 150px;
 }
 h1 {
-
 	text-align: center;
-	color: white;
-	font-family: 'Pixelify Sans', cursive;
+	color: rgb(11, 137, 191);
+	padding: 10px 0;
+	font-size: 50px;
+	margin: 0 ;
+}
+
+.présentation {
+background-image: url("../images/blanc.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+padding-bottom: 80px;
+
+}
+
+form {
+	background: white;
+	padding: 20px;
+	width: 800px;
+	margin: auto;
+}
+
+legend {
+	color: rgb(11, 137, 191);
+	font-style: italic;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+fieldset {
+	margin: 20px;
+	border: 3px solid whitesmoke;
+}
+
+.textfield
+{
+	font-style: italic; 
+}
+
+.textarea {
+	margin: auto;
 }

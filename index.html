@@ -15,8 +15,93 @@
 <div class="titre"></div>
 
 <div class="présentation">
-<h1>Qui suis-je ?</h2>
-<p>Diplômé en tant que professeur de mathématiques dans l'inférieur, j</p>
+<h1>Qui suis-je ?</h1>
+	<form action="php.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Coordonnées</legend>
+			<div>
+				<label for="nom-id">Nom </label> 
+				<input type="text" name="nom" id="nom-id" class="textfield" value="Van Buggenhout">  
+			</div>
+			<div>
+				<label for="prenom-id">Prénom </label>
+				<input type="text" name="prenom" id="prenom-id" class="textfield" value="Fabian">
+			</div>
+			<div>
+				<label for="homme-id">Homme </label> 
+				<input type="radio" name="homme" id="homme-id" checked="checked">
+				<label for="femme-id">Femme </label> 
+				<input type="radio" name="femme" id="femme-id">
+				<label for="autre-id">Autre </label> 
+				<input type="radio" name="autre" id="autre-id">
+			</div>
+			<div>
+				<label for="ddn-id">Date de naissance </label>
+				<input type="text" name="ddn" id="ddn-id" class="textfield" value="31/03/93">
+			</div>
+			<div>
+				<label for="localite-id">Localité </label>
+				<input type="text" name="localite" id="localite-id" class="textfield" value="4990 Lierneux">
+			</div>
+			<div>
+				<label for="permis-id">Permis B </label> 
+				<input type="radio" name="permis" id="permis-id" checked="checked">
+			</div>
+			<div>
+				<label for="telecharger">Télécharger une photo</label>
+				<input type="file" name="monFichier"  accept="application/jpeg" accept="application/png" multiple>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Expériences professionnelles</legend>
+			<div>
+				<label for="societe-id"> Monteur de structures métalliques </label> 
+				<input type="text" name="societe" id="societe-id" class="textfield" value="Luxforge">  
+			</div>
+
+
+<div>
+			<script language="JavaScript">
+				function ChangeUrl(formulaire)
+				   {
+				   if (formulaire.ListeUrl.selectedIndex != 0)
+					  {
+					 var url ;
+					 url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
+					 window.open(url,'_blank');
+					   }
+				   }
+				</script>
+			<label for="sectact-id"> Enseignement </label> 
+				<SELECT NAME="ListeUrl" SIZE=1 onChange="ChangeUrl(this.form)"  >
+				<OPTION SELECTED VALUE="">Menu déroulant cliquable</option>
+					<optgroup label="Professeur de mathématiques"></optgroup>
+						<option value="https://saintrochferrieres.be/">Saint Roch Ferrières </option>
+						<option value="https://www.ipciney-info.be/ipcineyV2/"> Providence Ciney</option>
+						<option value="http://idbl.idbl.be/"> Don Bosco Liège</option>
+						<option value="https://saintlaurent.enseignementlibremarche.be/"> Saint Laurent Marche</option>
+						<option value="https://saintroch.enseignementlibremarche.be/"> Saint Roch Marche</option>
+						<option value="https://www.college-sainte-veronique.be/"> Sainte Véronique Liège</option>
+						<option value="https://www.sainte-veronique.be/Marie_Jose/"> Marie José Liège</option>
+					</optgroup>	
+					<optgroup label="Professeur d'intégration">
+						<option value="https://www.epasc-ciney.be/epasc/"> Saint Quentin à Ciney </option>
+					</optgroup>	
+					<optgroup label="Accompagnateur CEFA">
+						<option value="http://cefa.idbl.be/"> CEFA Vottem</option>
+					</optgroup>
+				</SELECT>
+			</div>
+
+				<div>
+					<label for="description-id"> Informations supplémentaires </label >
+				</div>
+				<div class="textarea">
+					<textarea name="message" id="description-id" rows="4" cols="87">En pleine reconversion professionnelle, j'ai toujours eu un attrait prononcé pour l'informatique. Toujours prêt à accepter de nouveaux défis, je me considère comme quelqu'un de motivé, appliqué et déterminé. Je me remets sans cesse en question afin de m'améliorer dans mon travail professionnel. J'espère trouver un emploi stable où je pourrai m'épanouir et prévoir des projets à long terme.</textarea>
+				</div>	
+			</fieldset>
+			
+		</form>
 </div>
 <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, temporibus itaque eos aperiam cumque cupiditate repellendus minima dignissimos necessitatibus unde eius quas veritatis perspiciatis obcaecati sint hic tempora sequi praesentium!
 Cumque, eius quis, molestias id odit neque ducimus consectetur beatae tempore officia, debitis. Eligendi aut, quasi totam ipsam, harum assumenda, minus cum reiciendis culpa consectetur iusto, tempore quisquam ut consequuntur.
