@@ -1,59 +1,71 @@
 body {
-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+	background-image: url("../images/fondnoir1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 h1 {
 	text-align: center;
 	color: rgb(255, 255, 255);
 	padding: 50px 0;
-	font-size: 50px;
+	font-size: 2vw;
 	margin: auto ;
 }
 .photo {
-	-moz-border-radius:7px;
-	-webkit-border-radius:7px;
-	border-radius:7px;
-	text-align: center;
+	padding-top:16px;
+	padding-left:1vw;
+	width: 30px;
+	height: 30px;
 }
 
 h2 {
 	text-align: center;
 	color: rgb(255, 255, 255);
-	padding: 50px 0;
+	padding-top: 100px;
 	font-size: 50px;
-	margin: auto ;
-}
-
-.présentation {
-background-image: url("../images/fondnoir1.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-padding-bottom: 80px;
+	margin: auto;
+	padding-bottom: 2vw;
 
 }
+h3 {
+	color: white;
+	margin-left: 15%;
+	font-size: 2vw;
+	padding-top: 2vw;
+	text-decoration: underline rgb(11, 137, 191);
+}
+.accroche {
+	width: 50%;
+	margin-left: 23%;
+	border: 2vw inset white ;
+}
+p {
+	color: white;
+	text-align: center;
+	font-size: 2vw;
 
+}
 form {
 	background: white;
-	padding: 20px;
-	width: 800px;
+	padding: 1vw;	
 	border-radius: 30px;
 	line-height: 50px;
-	text-align: center;
-	margin-left: auto;
-    margin-right: auto;
-	margin-bottom: 50px;
+	font-size: 1.3vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-top: 3vw;
 }
 
 legend {
 	color: rgb(11, 137, 191);
 	font-style: italic;
-	font-size: 32px;
-	font-weight: 600;
+	font-size: 3vw;
 }
 
 fieldset {
-	margin: 20px;
+	margin: 3%;
 	border: 3px solid rgb(11, 137, 191);
 }
 
@@ -62,6 +74,68 @@ fieldset {
 	font-style: italic; 
 }
 
-.textarea {
-	margin: auto;
+.nav {
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	line-height: 65px;
+	display: block;
+}
+
+.nav div.logo {
+	float: left;
+	height: 65px;
+}
+
+.nav div.main_list {
+	height: 65px;
+	float: right;
+}
+
+.nav div.main_list ul ,.nav div.logo ul{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav div.main_list ul li , .nav div.logo ul li{
+	width: 2pw;
+	height: 65px;
+	padding: 0;
+	padding-right: 2vw;
+}
+
+.nav div.main_list ul li a , .nav div.logo ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5vw;
+}
+.nav div.logo ul li p{
+	color: #fff;
+	font-size: 1.5vw;
+	Margin:0;
+}
+
+.nav div.main_list ul li a:hover , .nav div.logo ul li a:hover{
+	color: rgb(11, 137, 191);
+}
+
+.affix {
+	padding: 0;
+	background-color: #111;
+}
+
+.telechargement {
+	width: auto;
+	color: white;
+	margin-top:2vw;
+	margin-top:2vw;
+	margin-left: 35%;
+	margin-right: 35%;
+	text-align: center;
+	border: 3px ridge white;
+	padding :1vw;
 }
