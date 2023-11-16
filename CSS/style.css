@@ -139,3 +139,7 @@ fieldset {
 	border: 3px ridge white;
 	padding :1vw;
 }
+
+.textarea {
+	text-align: center;
+}
