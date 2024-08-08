@@ -20,6 +20,14 @@ h1 {
 	height: 30px;
 }
 
+.representation {
+	display: block;
+	margin: auto;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	padding-bottom: 4vw;
+}
 h2 {
 	text-align: center;
 	color: rgb(255, 255, 255);
@@ -30,8 +38,8 @@ h2 {
 
 }
 h3 {
+	text-align: center;
 	color: white;
-	margin-left: 15%;
 	font-size: 2vw;
 	padding-top: 2vw;
 	text-decoration: underline rgb(11, 137, 191);
@@ -48,7 +56,7 @@ p {
 
 }
 form {
-	background: white;
+	background: rgb(255, 255, 255);
 	padding: 1vw;	
 	border-radius: 30px;
 	line-height: 50px;
@@ -132,7 +140,7 @@ fieldset {
 	width: auto;
 	color: white;
 	margin-top:2vw;
-	margin-top:2vw;
+	margin-bottom:1vw;
 	margin-left: 35%;
 	margin-right: 35%;
 	text-align: center;
