@@ -6,6 +6,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+
 h1 {
 	text-align: center;
 	color: rgb(255, 255, 255);
@@ -20,6 +21,19 @@ h1 {
 	height: 30px;
 }
 
+#conteneur {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	row-gap: 2vw;
+	align-content: space-evenly;
+	flex-wrap: wrap;
+}
+#pp {
+	height: auto;
+	padding-top:7px;
+}
+
 .representation {
 	display: block;
 	margin: auto;
@@ -28,6 +42,7 @@ h1 {
 	border-radius: 50%;
 	padding-bottom: 4vw;
 }
+
 h2 {
 	text-align: center;
 	color: rgb(255, 255, 255);
@@ -37,6 +52,7 @@ h2 {
 	padding-bottom: 2vw;
 
 }
+
 h3 {
 	text-align: center;
 	color: white;
@@ -58,23 +74,24 @@ p {
 }
 form {
 	max-width: fit-content;
-	margin: auto;
 	background: rgb(255, 255, 255, 0.1);
 	color: rgb(255, 255, 255);
 	padding: 1vw 2vw 2vw 2vw;	
 	border-radius: 30px;
 	line-height: 3vw;
 	font-size: 1.3vw;
-	margin-top: 2vw;
-	margin-bottom: 2vw;
 }
 
 #technologies {
 	padding-right: 3vw;
 }
 
+#coordonnees {
+	line-height: 3.3vw;
+}
 #expp {
-	padding-right: 4vw;
+	padding-right: 4.5vw;
+	margin-left: 5vw;
 }
 legend {
 	color: rgb(255, 255, 255);

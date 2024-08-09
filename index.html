@@ -11,14 +11,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function(event) {
-  //Removing article link when on mobiforge
 			console.log(document.referrer);
 			if (parent !== window && document.referrer.indexOf('https://mobiforge.com') === 0 && document.referrer.indexOf('http://mobiforge.com') === 0)
 			{  
 				console.log(document.referrer);
 				document.getElementById('article-link').className = "fade-out";
 			}
-
 		});
 	</script>
 </head>
@@ -27,7 +25,7 @@
 	<nav class="nav">
 		<div class="logo">
 			<ul class="navlinks">
-				<li><img src="images/moi.png" class="photo" alt="texte alternatif" style="height: auto;padding-top:7px";/></li>
+				<li><img src="images/moi.png" class="photo" id="pp" alt="texte alternatif" ;/></li>
 				<li><p> Fabian Van Buggenhout</p></li>
 				<li><a href="https://www.linkedin.com/in/fabian-van-buggenhout-132b17293/" target="_blank"><img src="images/test.png" class="photo" alt="texte alternatif"/></a></li>
 				<li><a href="https://github.com/Fvb93" target="_blank"><img src="images/github.jpg" class="photo" alt="texte alternatif"/></a></li>
@@ -42,12 +40,8 @@
 			</ul>
 		</div>
 	</nav>
-
-	<!-- Jquery needed -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
-
-	<!-- Function used to shrink nav bar removing paddings and adding black background -->
 	<script>
 
 		$('.nav').addClass('affix');
@@ -65,126 +59,128 @@
 		</div>
 		<h3>Voici quelques informations à mon sujet :</h3>
 
-		<form  id="coordonnees">
-			<fieldset>
-				<legend>Coordonnées</legend>
-				<div>
-					<label for="nom-id">Nom </label> 
-					<input type="text" name="nom" id="nom-id" class="textfield" disabled value="Van Buggenhout">  
-				</div>
-				<div>
-					<label for="prenom-id">Prénom </label>
-					<input type="text" name="prenom" id="prenom-id" class="textfield" disabled value="Fabian">
-				</div>
-				<div>
-					<label for="homme-id">Homme </label> 
-					<input type="radio" name="homme" id="homme-id" checked="checked">
-					<label for="femme-id">Femme </label> 
-					<input type="radio" name="femme"  disabled id="femme-id">
-					<label for="autre-id">Autre </label> 
-					<input type="radio" name="autre" disabled id="autre-id">
-				</div>
-				<div>
-					<label for="ddn-id">Date de naissance </label>
-					<input type="text" name="ddn" id="ddn-id" class="textfield" value="31/03/93" disabled>
-				</div>
-				<div>
-					<label for="localite-id">Localité </label>
-					<input type="text" name="localite" id="localite-id" class="textfield" value="4990 Lierneux"  disabled>
-				</div>
-				<div>
-					<label for="permis-id">Permis B </label> 
-					<input type="radio" name="permis" id="permis-id" checked="checked">
-				</div>
-			</fieldset>
-		</form>
-		<form   id="formations">
-			<fieldset>
-				<legend>Formations</legend>
-				<ul>
-					<li>.NET / Angular à TechniFutur à Seraing</li>
-					<li>Initiation à la programmation à Proforma Angleur</li>	
-					<li>AESI Mathématiques à Sainte-Croix Liège</li>	
-					<li>Ingénieur industriel à Gramme Liège</li>	
-					<li>Etudes secondaires à Saint-Joseph Welkenraedt</li>	
-				</ul>
-			</fieldset>
-		</form>
-		<form   id="technologies">
-			<fieldset>
-				<legend>Technologies</legend>
-				<ul>
-					<li>.NET </li>
-					<li>Entity framework</li>	
-					<li>JavaScript</li>
-					<li>TypeScript</li>
-					<li>Angular </li>
-					<li>Blazor</li>	
-					<li>Ionic</li>
-					<li>Web API</li>	
-					<li>HTML5 / CSS3</li>
-					<li>Git</li>
-					<li>SQL Serveur , mySQL</li>
-					<li>Java</li>
-					<li>PHP</li>
-				</ul>
-			</fieldset>
-		</form>
-		<form  id="expp">
-			<fieldset>
-				<legend>Expériences professionnelles</legend>
-				<div>
-					<label for="societe-id"> Monteur de structures métalliques </label> 
-					<input type="text" name="societe" id="societe-id" class="textfield" value="Luxforge" disabled>  
-				</div>
-
-
-				<div>
-					<script language="JavaScript">
-						function ChangeUrl(formulaire)
-						{
-							if (formulaire.ListeUrl.selectedIndex != 0)
-							{
-								var url ;
-								url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
-								window.open(url,'_blank');
-							}
-						}
-					</script>
-					<label for="sectact-id"> Enseignement </label> 
-					<SELECT NAME="ListeUrl" SIZE=1 onChange="ChangeUrl(this.form)"  >
-						<OPTION SELECTED VALUE="">Menu déroulant cliquable</option>
-							<optgroup label="Professeur de mathématiques"></optgroup>
-							<option value="https://saintrochferrieres.be/">Saint Roch Ferrières </option>
-							<option value="https://www.ipciney-info.be/ipcineyV2/"> Providence Ciney</option>
-							<option value="http://idbl.idbl.be/"> Don Bosco Liège</option>
-							<option value="https://saintlaurent.enseignementlibremarche.be/"> Saint Laurent Marche</option>
-							<option value="https://saintroch.enseignementlibremarche.be/"> Saint Roch Marche</option>
-							<option value="https://www.college-sainte-veronique.be/"> Sainte Véronique Liège</option>
-							<option value="https://www.sainte-veronique.be/Marie_Jose/"> Marie José Liège</option>
-						</optgroup>	
-						<optgroup label="Professeur d'intégration">
-							<option value="https://www.epasc-ciney.be/epasc/"> Saint Quentin à Ciney </option>
-						</optgroup>	
-						<optgroup label="Accompagnateur CEFA">
-							<option value="http://cefa.idbl.be/"> CEFA Vottem</option>
-						</optgroup>
-					</SELECT>
-				</div>
-				<div> 
-					<label for="etudiant-id"> Jobs étudiant </label> <select name="etudiant-id">
-						<OPTION SELECTED VALUE="">Menu déroulant</option>
-							<option value="weltrans"> Weltrans</option>
-							<option value="henriglace"> Henri Glaces</option>
-						</select> </div>
+		<section id="conteneur">
+			
+				<form  id="coordonnees">
+					<fieldset>
+						<legend>Coordonnées</legend>
 						<div>
-							<label for="description-id"> Informations supplémentaires </label >
+							<label for="nom-id">Nom </label> 
+							<input type="text" name="nom" id="nom-id" class="textfield" disabled value="Van Buggenhout">  
 						</div>
 						<div>
-							<textarea name="message" class="textarea" rows="4" cols="79">En pleine reconversion professionnelle, j'ai toujours eu un attrait prononcé pour l'informatique. Toujours prêt à accepter de nouveaux défis, je me considère comme quelqu'un d'appliqué et déterminé. Je me remets sans cesse en question afin de m'améliorer dans mon travail professionnel. J'espère trouver un emploi où je pourrai m'épanouir et prévoir des projets à long terme.</textarea>
-						</div>	
+							<label for="prenom-id">Prénom </label>
+							<input type="text" name="prenom" id="prenom-id" class="textfield" disabled value="Fabian">
+						</div>
+						<div>
+							<label for="homme-id">Homme </label> 
+							<input type="radio" name="homme" id="homme-id" checked="checked">
+							<label for="femme-id">Femme </label> 
+							<input type="radio" name="femme"  disabled id="femme-id">
+							<label for="autre-id">Autre </label> 
+							<input type="radio" name="autre" disabled id="autre-id">
+						</div>
+						<div>
+							<label for="ddn-id">Date de naissance </label>
+							<input type="text" name="ddn" id="ddn-id" class="textfield" value="31/03/93" disabled>
+						</div>
+						<div>
+							<label for="localite-id">Localité </label>
+							<input type="text" name="localite" id="localite-id" class="textfield" value="4990 Lierneux"  disabled>
+						</div>
+						<div>
+							<label for="permis-id">Permis B </label> 
+							<input type="radio" name="permis" id="permis-id" checked="checked">
+						</div>
 					</fieldset>
 				</form>
+			
+			
+				<form   id="formations">
+					<fieldset>
+						<legend>Formations</legend>
+						<ul>
+							<li>.NET / Angular à TechniFutur à Seraing</li>
+							<li>Initiation à la programmation à Proforma Angleur</li>	
+							<li>AESI Mathématiques à Sainte-Croix Liège</li>	
+							<li>Ingénieur industriel à Gramme Liège</li>	
+							<li>Etudes secondaires à Saint-Joseph Welkenraedt</li>	
+						</ul>
+					</fieldset>
+				</form>
+			
+				<form   id="technologies">
+					<fieldset>
+						<legend>Technologies</legend>
+						<ul>
+							<li>.NET, Angular</li>
+							<li>Entity framework</li>	
+							<li>JavaScript, TypeScript</li>
+							<li>Blazor, Ionic</li>	
+							<li>HTML5 / CSS3</li>
+							<li>SQL Serveur , mySQL</li>
+							<li>Java, PHP, Git</li>
+						</ul>
+					</fieldset>
+				</form>
+			
+				<form  id="expp">
+					<fieldset>
+						<legend>Expériences professionnelles</legend>
+						<div>
+							<label for="societe-id"> Monteur de structures métalliques </label> 
+							<input type="text" name="societe" id="societe-id" class="textfield" value="Luxforge" disabled>  
+						</div>
+
+
+						<div>
+							<script language="JavaScript">
+								function ChangeUrl(formulaire)
+								{
+									if (formulaire.ListeUrl.selectedIndex != 0)
+									{
+										var url ;
+										url = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
+										window.open(url,'_blank');
+									}
+								}
+							</script>
+							<label for="sectact-id"> Enseignement </label> 
+							<SELECT NAME="ListeUrl" SIZE=1 onChange="ChangeUrl(this.form)"  >
+								<OPTION SELECTED VALUE="">Menu déroulant cliquable</option>
+									<optgroup label="Professeur de mathématiques"></optgroup>
+									<option value="https://saintrochferrieres.be/">Saint Roch Ferrières </option>
+									<option value="https://www.ipciney-info.be/ipcineyV2/"> Providence Ciney</option>
+									<option value="http://idbl.idbl.be/"> Don Bosco Liège</option>
+									<option value="https://saintlaurent.enseignementlibremarche.be/"> Saint Laurent Marche</option>
+									<option value="https://saintroch.enseignementlibremarche.be/"> Saint Roch Marche</option>
+									<option value="https://www.college-sainte-veronique.be/"> Sainte Véronique Liège</option>
+									<option value="https://www.sainte-veronique.be/Marie_Jose/"> Marie José Liège</option>
+								</optgroup>	
+								<optgroup label="Professeur d'intégration">
+									<option value="https://www.epasc-ciney.be/epasc/"> Saint Quentin à Ciney </option>
+								</optgroup>	
+								<optgroup label="Accompagnateur CEFA">
+									<option value="http://cefa.idbl.be/"> CEFA Vottem</option>
+								</optgroup>
+							</SELECT>
+						</div>
+						<div> 
+							<label for="etudiant-id"> Jobs étudiant </label> <select name="etudiant-id">
+								<OPTION SELECTED VALUE="">Menu déroulant</option>
+									<option value="weltrans"> Weltrans</option>
+									<option value="henriglace"> Henri Glaces</option>
+								</select> </div>
+								<div>
+									<label for="description-id"> Informations supplémentaires </label >
+								</div>
+								<div>
+									<textarea name="message" class="textarea" rows="4" cols="79">En pleine reconversion professionnelle, j'ai toujours eu un attrait prononcé pour l'informatique. Toujours prêt à accepter de nouveaux défis, je me considère comme quelqu'un d'appliqué et déterminé. Je me remets sans cesse en question afin de m'améliorer dans mon travail professionnel. J'espère trouver un emploi où je pourrai m'épanouir et prévoir des projets à long terme.</textarea>
+								</div>	
+							</fieldset>
+						</form>
+					
+				</section>
 				<div class="telechargement">
 				Si vous désirez obtenir mon CV <a href="documents/cv.pdf" download="CV VAN BUGGENHOUT FABIAN"><button>Cliquez ici</button></a>
 			</div>
