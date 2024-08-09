@@ -42,7 +42,8 @@ h3 {
 	color: white;
 	font-size: 2vw;
 	padding-top: 2vw;
-	text-decoration: underline rgb(11, 137, 191);
+	padding-bottom: 2vw;
+	text-decoration: underline rgb(255, 255, 255);
 }
 .accroche {
 	width: 50%;
@@ -56,25 +57,34 @@ p {
 
 }
 form {
-	background: rgb(255, 255, 255);
-	padding: 1vw;	
+	max-width: fit-content;
+	margin: auto;
+	background: rgb(255, 255, 255, 0.1);
+	color: rgb(255, 255, 255);
+	padding: 1vw 2vw 2vw 2vw;	
 	border-radius: 30px;
-	line-height: 50px;
+	line-height: 3vw;
 	font-size: 1.3vw;
-	margin-left: 15vw;
-	margin-right: 15vw;
-	margin-top: 3vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
 }
 
+#technologies {
+	padding-right: 3vw;
+}
+
+#expp {
+	padding-right: 4vw;
+}
 legend {
-	color: rgb(11, 137, 191);
+	color: rgb(255, 255, 255);
 	font-style: italic;
 	font-size: 3vw;
 }
 
 fieldset {
 	margin: 3%;
-	border: 3px solid rgb(11, 137, 191);
+	border: 3px solid rgb(150, 152, 153);
 }
 
 .textfield
@@ -137,17 +147,18 @@ fieldset {
 }
 
 .telechargement {
-	width: auto;
 	color: white;
+	font-size: 1vw;
 	margin-top:2vw;
 	margin-bottom:1vw;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 38%;
+	margin-right: 38%;
 	text-align: center;
 	border: 3px ridge white;
 	padding :1vw;
 }
 
 .textarea {
-	text-align: center;
+	width : 40vw;
+	resize: none;
 }
