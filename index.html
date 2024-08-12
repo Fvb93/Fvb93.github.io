@@ -6,132 +6,102 @@
 	<title>Fabian Van Buggenhout</title>
 	<link rel="stylesheet" href="CSS/normalize.css"/>
 	<link rel="stylesheet" href="CSS/style.css"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-	<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function(event) {
-			console.log(document.referrer);
-			if (parent !== window && document.referrer.indexOf('https://mobiforge.com') === 0 && document.referrer.indexOf('http://mobiforge.com') === 0)
-			{  
-				console.log(document.referrer);
-				document.getElementById('article-link').className = "fade-out";
-			}
-		});
-	</script>
 </head>
 
 <body>
-	<nav class="nav">
-		<div class="logo">
-			<ul class="navlinks">
-				<li><img src="images/moi.png" class="photo" id="pp" alt="texte alternatif" ;/></li>
-				<li><p> Fabian Van Buggenhout</p></li>
-				<li><a href="https://www.linkedin.com/in/fabian-van-buggenhout-132b17293/" target="_blank"><img src="images/test.png" class="photo" alt="texte alternatif"/></a></li>
-				<li><a href="https://github.com/Fvb93" target="_blank"><img src="images/github.jpg" class="photo" alt="texte alternatif"/></a></li>
-			</ul>
-		</div>
-		<div class="main_list">
-			<ul class="navlinks">
-				<li><a href="#coordonnees">Coordonnées</a></li>
-				<li><a href="#expp">Expériences professionnelles</a></li>
-				<li><a href="#formations">Formations</a></li>
-				<li><a href="#technologies">Technologies</a></li>
-			</ul>
-		</div>
-	</nav>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
-	<script>
-
-		$('.nav').addClass('affix');
-		console.log("OK");
-
-	</script>
-
-
-	<div class="présentation">
-		<h2>Qui suis-je ?</h2>
-		<img src="images/output.jpg" class="representation" alt="texte alternatif";/>
+	<header>
+		<nav class="nav">
+					<div class="liens">
+						<div><img src="images/moi.png" id="pp" alt="texte alternatif" ;/></div>
+						<div><h3> Fabian Van Buggenhout</h3></div>
+						<div><a href="https://www.linkedin.com/in/fabian-van-buggenhout-132b17293/" target="_blank"><img src="images/test.png" class="photo" alt="texte alternatif"/></a></div>
+						<div><a href="https://github.com/Fvb93" target="_blank"><img src="images/github.jpg" class="photo" alt="texte alternatif"/></a></div>
+					</div>
+					<div class="menu">
+						<div><a href="#coordonnees">Coordonnées</a></div>
+						<div><a href="#expp">Expériences professionnelles</a></div>
+						<div><a href="#formations">Formations</a></div>
+						<div><a href="#technologies">Technologies</a></div>
+					</div>
+		</nav>
+	</header>
+	 <div class="slideout"> Merci pour votre votre intérêt ! </div>
+	<div class="presentation">
+		<div><h1>Qui suis-je ?</h1></div>
+		<div><img src="images/output.jpg" class="representation" alt="texte alternatif";/></div>
 		<div class="accroche"> 
 			<p>Un professeur de mathématiques accompli, mais ...</p>
 			<p>un développeur en plein apprentissage !</p>
 		</div>
-		<h3>Voici quelques informations à mon sujet :</h3>
-
+		<div><h2>Voici quelques informations à mon sujet : </h2></div>
+		
 		<section id="conteneur">
-			
-				<form  id="coordonnees">
-					<fieldset>
-						<legend>Coordonnées</legend>
-						<div>
-							<label for="nom-id">Nom </label> 
-							<input type="text" name="nom" id="nom-id" class="textfield" disabled value="Van Buggenhout">  
-						</div>
-						<div>
-							<label for="prenom-id">Prénom </label>
-							<input type="text" name="prenom" id="prenom-id" class="textfield" disabled value="Fabian">
-						</div>
-						<div>
-							<label for="homme-id">Homme </label> 
-							<input type="radio" name="homme" id="homme-id" checked="checked">
-							<label for="femme-id">Femme </label> 
-							<input type="radio" name="femme"  disabled id="femme-id">
-							<label for="autre-id">Autre </label> 
-							<input type="radio" name="autre" disabled id="autre-id">
-						</div>
-						<div>
-							<label for="ddn-id">Date de naissance </label>
-							<input type="text" name="ddn" id="ddn-id" class="textfield" value="31/03/93" disabled>
-						</div>
-						<div>
-							<label for="localite-id">Localité </label>
-							<input type="text" name="localite" id="localite-id" class="textfield" value="4990 Lierneux"  disabled>
-						</div>
-						<div>
-							<label for="permis-id">Permis B </label> 
-							<input type="radio" name="permis" id="permis-id" checked="checked">
-						</div>
-					</fieldset>
-				</form>
-			
-			
-				<form   id="formations">
-					<fieldset>
-						<legend>Formations</legend>
-						<ul>
-							<li>.NET / Angular à TechniFutur à Seraing</li>
-							<li>Initiation à la programmation à Proforma Angleur</li>	
-							<li>AESI Mathématiques à Sainte-Croix Liège</li>	
-							<li>Ingénieur industriel à Gramme Liège</li>	
-							<li>Etudes secondaires à Saint-Joseph Welkenraedt</li>	
-						</ul>
-					</fieldset>
-				</form>
-			
-				<form   id="technologies">
-					<fieldset>
-						<legend>Technologies</legend>
-						<ul>
-							<li>.NET, Angular</li>
-							<li>Entity framework</li>	
-							<li>JavaScript, TypeScript</li>
-							<li>Blazor, Ionic</li>	
-							<li>HTML5 / CSS3</li>
-							<li>SQL Serveur , mySQL</li>
-							<li>Java, PHP, Git</li>
-						</ul>
-					</fieldset>
-				</form>
-			
-				<form  id="expp">
-					<fieldset>
-						<legend>Expériences professionnelles</legend>
-						<div>
-							<label for="societe-id"> Monteur de structures métalliques </label> 
-							<input type="text" name="societe" id="societe-id" class="textfield" value="Luxforge" disabled>  
-						</div>
-
+			<form  id="coordonnees">
+				<fieldset>
+					<legend>Coordonnées</legend>
+					<div>
+						<label for="nom-id">Nom </label> 
+						<input type="text" name="nom" id="nom-id" class="textfield" disabled value="Van Buggenhout">  
+					</div>
+					<div>
+						<label for="prenom-id">Prénom </label>
+						<input type="text" name="prenom" id="prenom-id" class="textfield" disabled value="Fabian">
+					</div>
+					<div>
+						<label for="homme-id">Homme </label> 
+						<input type="radio" name="homme" id="homme-id" checked="checked">
+						<label for="femme-id">Femme </label> 
+						<input type="radio" name="femme"  disabled id="femme-id">
+						<label for="autre-id">Autre </label> 
+						<input type="radio" name="autre" disabled id="autre-id">
+					</div>
+					<div>
+						<label for="ddn-id">Date de naissance </label>
+						<input type="text" name="ddn" id="ddn-id" class="textfield" value="31/03/93" disabled>
+					</div>
+					<div>
+						<label for="localite-id">Localité </label>
+						<input type="text" name="localite" id="localite-id" class="textfield" value="4990 Lierneux"  disabled>
+					</div>
+					<div>
+						<label for="permis-id">Permis B </label> 
+						<input type="radio" name="permis" id="permis-id" checked="checked">
+					</div>
+				</fieldset>
+			</form>
+			<form   id="formations">
+				<fieldset>
+					<legend>Formations</legend>
+					<ul>
+						<li>.NET / Angular à TechniFutur à Seraing</li>
+						<li>Initiation à la programmation à Proforma Angleur</li>	
+						<li>AESI Mathématiques à Sainte-Croix Liège</li>	
+						<li>Ingénieur industriel à Gramme Liège</li>	
+						<li>Etudes secondaires à Saint-Joseph Welkenraedt</li>	
+					</ul>
+				</fieldset>
+			</form>
+			<form   id="technologies">
+				<fieldset>
+					<legend>Technologies</legend>
+					<ul>
+						<li>.NET, Angular</li>
+						<li>Entity framework</li>	
+						<li>JavaScript, TypeScript</li>
+						<li>Blazor, Ionic</li>	
+						<li>HTML5 / CSS3</li>
+						<li>SQL Serveur , mySQL</li>
+						<li>Java, PHP, Git</li>
+					</ul>
+				</fieldset>
+			</form>
+			<form  id="expp">
+				<fieldset>
+					<legend>Expériences professionnelles</legend>
+					<div>
+						<label for="societe-id"> Monteur de structures métalliques </label> 
+						<input type="text" name="societe" id="societe-id" class="textfield" value="Luxforge" disabled>  
+					</div>
 
 						<div>
 							<script language="JavaScript">
@@ -180,11 +150,10 @@
 							</fieldset>
 						</form>
 					
-				</section>
-				<div class="telechargement">
-				Si vous désirez obtenir mon CV <a href="documents/cv.pdf" download="CV VAN BUGGENHOUT FABIAN"><button>Cliquez ici</button></a>
-			</div>
-			</div>
-
-		</body>
-		</html>
+		</section>
+		<div class="telechargement">
+			Si vous désirez obtenir mon CV <a href="documents/cv.pdf" download="CV VAN BUGGENHOUT FABIAN"><button>Cliquez ici</button></a>
+		</div>
+	</div>
+</body>
+</html>
