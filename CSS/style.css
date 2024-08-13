@@ -31,14 +31,15 @@ body {
 		transform: translateX(0);
 	}
 	to {
-		transform: translateX(300%);
+		transform: translateX(150%);
+		visibility: hidden;
 	}
 }
 
 .slideout {
 	position: absolute;
 	font-size: 4vw;
-	animation: slideOut 7s linear forwards;
+	animation: slideOut 5s linear forwards;
 	background-color: rgb(0, 0, 0);
 }
 
